@@ -6,7 +6,7 @@ import org.junit.Test;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.url;
 
-public class LandingPage {
+public class HomePage {
     @Test
     /*
     This test check if user lands correct Landing page
@@ -27,27 +27,28 @@ public class LandingPage {
         $("#loginBar").should(Condition.exist);
         $("#headerProxy").should(Condition.exist);
         $("#content").should(Condition.exist);
-        $("#PageNav").should(Condition.exist);
+        $(".PageNav").should(Condition.exist);
         $("#pageDescription").should(Condition.exist);
-        $("#footer").should(Condition.exist);
+        $("body > footer").should(Condition.exist);
         close();
     }
 
     @Test
+    /*
+    This test checks basic elements for login form on the top
+     */
     public void checkLoginFormBasicElements() {
         open("https://freewebsitetemplates.com/");
+        $("#login > div").shouldBe(Condition.hidden);
         $("#loginBarHandle > label").click();
         $("#login > div").shouldBe(Condition.visible);
-        $("#login > div > dl:nth-child(1) > dt > label").shouldHave(Condition.text("Your name or email address:"));
+        $("#login > div > dl > dt > label[for=\"LoginControl\"]").shouldHave(Condition.text("Your name or email address:"));
         $("#LoginControl").should(Condition.exist);
-        $("#LoginControl").shouldHave(Condition.text("Do you already have an account?"));
+        $("#login > div > dl > dt > label[for=\"ctrl_password\"]").shouldHave(Condition.text("Do you already have an account?"));
         $("#ctrl_password").should(Condition.exist);
-
-
-
-
+        $("#ctrl_not_registered").should(Condition.exist);
+        close();
     }
-
 
     @Test
     /*
@@ -62,10 +63,12 @@ public class LandingPage {
         $("#fwtTemplatesList > ul > li:nth-child("+chooseElement+") > a > img").should(Condition.exist);
         $("#fwtTemplatesList > ul > li:nth-child("+chooseElement+") > a > img").shouldHave(Condition.attribute("src"));
         $("#fwtTemplatesList > ul > li:nth-child("+chooseElement+") > div.option").should(Condition.exist);
-
-
-
     }
+
+
+
+    
+    
 
 
 }
