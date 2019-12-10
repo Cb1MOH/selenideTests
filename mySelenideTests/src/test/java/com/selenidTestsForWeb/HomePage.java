@@ -65,10 +65,10 @@ public class HomePage {
         $("#fwtTemplatesList > ul > li:nth-child("+chooseElement+") > div.option").should(Condition.exist);
     }
 
+    @Test
 
-
-    
-    
-
-
+    public void checkBasicFooterElements() {
+        open("https://freewebsitetemplates.com/");
+        $("body > footer > div.footer > div > div > ul > li > a[href=\"about/terms\"]").should(Condition.exist);
+    }
 }
