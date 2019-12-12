@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e3d2436-9eea-4df1-be44-6ecb2b2bfbb4" name="Default Changelist" comment="pom filed added to repo" />
+    <list default="true" id="4e3d2436-9eea-4df1-be44-6ecb2b2bfbb4" name="Default Changelist" comment="pom filed added to repo">
+      <change beforePath="$PROJECT_DIR$/mySelenideTests.iws" beforeDir="false" afterPath="$PROJECT_DIR$/mySelenideTests.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -560,9 +562,9 @@
       <screen x="-1920" y="4" width="1920" height="1160" />
     </state>
     <state x="-1144" y="361" key="chooseDestDirectoryDialog/0.0.1920.1160/-1920.4.1920.1160@-1920.4.1920.1160" timestamp="1575534298839" />
-    <state x="-1264" y="407" key="com.intellij.ide.util.TipDialog" timestamp="1575980146288">
+    <state x="-1264" y="407" key="com.intellij.ide.util.TipDialog" timestamp="1576056402474">
       <screen x="-1920" y="4" width="1920" height="1160" />
     </state>
-    <state x="-1264" y="407" key="com.intellij.ide.util.TipDialog/0.0.1920.1160/-1920.4.1920.1160@-1920.4.1920.1160" timestamp="1575980146288" />
+    <state x="-1264" y="407" key="com.intellij.ide.util.TipDialog/0.0.1920.1160/-1920.4.1920.1160@-1920.4.1920.1160" timestamp="1576056402474" />
   </component>
 </project>
